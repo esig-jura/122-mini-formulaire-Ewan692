@@ -16,13 +16,38 @@
 <body>
 <h1>Mini Formulaire</h1>
 <!-- VOTRE FORMULAIRE -->
-<form action="https://kode.ch/getpost">
+<form action="https://kode.ch/getpost/">
     <h2>Création d'un compte</h2>
 
-    <label for="email">E-mail</label>
-    <input type="text" id="email">
+    <ul>
+        <li>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email">
+        </li>
 
-    <button>Créer un compte</button>
+        <li>
+            <!-- Genre -->
+            <div>
+                <label>
+                    <input type="radio" name="genre" id="femme" value="f">
+                    <span>Femme</span>
+                </label>
+                <label>
+                    <input type="radio" name="genre" id="homme" value="h">
+                    <span>Homme</span>
+                </label>
+                <label>
+                    <input type="radio" name="genre" id="nspp" value="n">
+                    <span>Ne se prononce pas</span>
+                </label>
+            </div>
+        </li>
+
+        <li>
+            <button>Créer un compte</button>
+        </li>
+    </ul>
+
 </form>
 <script src="js/main.js"></script>
 </body>
