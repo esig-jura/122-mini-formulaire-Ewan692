@@ -20,13 +20,26 @@
     <h2>Création d'un compte</h2>
 
     <ul>
+        <!-- E-mail -->
         <li>
             <label for="email">E-mail</label>
             <input type="text" id="email" name="email">
         </li>
 
+        <!-- Mot de passe -->
         <li>
-            <!-- Genre -->
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" required>
+        </li>
+
+        <!-- Confirmation du mot de passe -->
+        <li>
+            <label for="password-confirm">Confirmer le mot de passe</label>
+            <input type="password" name="password-confirm" id="password-confirm" required>
+        </li>
+
+        <!-- Genre -->
+        <li>
             <div>
                 <label>
                     <input type="radio" name="genre" id="femme" value="f">
@@ -43,6 +56,7 @@
             </div>
         </li>
 
+        <!-- Envoi du formulaire -->
         <li>
             <button>Créer un compte</button>
         </li>
